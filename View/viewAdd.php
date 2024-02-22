@@ -10,16 +10,16 @@
         $pilihanMenu = trim(fgets(STDIN));
         if(intval($pilihanMenu)==1){
             echo "Menambah sego babat ke dalam cart";
-            add($listMenu[0]);
+            addSego($listMenu[0]);
         }else if(intval($pilihanMenu)== 2){
             echo "Menambah sego endog ke dalam cart";
-            add($listMenu[1]);
+            addSego($listMenu[1]);
         }else if(intval($pilihanMenu)== 3){
             echo "Menambah sego ayam ke dalam cart";
-            add($listMenu[2]);
+            addSego($listMenu[2]);
         }else if(intval($pilihanMenu)== 4){
             echo "Menambah sego ikan ke dalam cart";
-            add($listMenu[3]);
+            addSego($listMenu[3]);
         }else if(intval($pilihanMenu)== 5){
             echo "Keluar dari program";
             return;

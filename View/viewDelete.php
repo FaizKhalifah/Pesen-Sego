@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . "/../controllers/deleteSego.php";
 require_once __DIR__ . "/../controllers/fetchSego.php";
-    function delete(){
+    function viewDelete(){
         echo "Apakah kamu ingin membayar (ya/tidak)?";
         $pilihanOpsi = trim(fgets(STDIN));
         if(strtolower($pilihanOpsi)=="ya"){

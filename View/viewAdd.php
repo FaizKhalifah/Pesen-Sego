@@ -9,22 +9,22 @@
         echo"Pilih menu yang kamu mau dalam angka : ";
         $pilihanMenu = trim(fgets(STDIN));
         if(intval($pilihanMenu)==1){
-            echo "Menambah sego babat ke dalam cart";
+            echo "Menambah sego babat ke dalam cart \n";
             addSego($listMenu[0]);
         }else if(intval($pilihanMenu)== 2){
-            echo "Menambah sego endog ke dalam cart";
+            echo "Menambah sego endog ke dalam cart \n";
             addSego($listMenu[1]);
         }else if(intval($pilihanMenu)== 3){
-            echo "Menambah sego ayam ke dalam cart";
+            echo "Menambah sego ayam ke dalam cart \n";
             addSego($listMenu[2]);
         }else if(intval($pilihanMenu)== 4){
-            echo "Menambah sego ikan ke dalam cart";
+            echo "Menambah sego ikan ke dalam cart \n";
             addSego($listMenu[3]);
         }else if(intval($pilihanMenu)== 5){
-            echo "Keluar dari program";
+            echo "Keluar dari program \n";
             return;
         }else{
-            echo "Perintah tidak dikenal";
+            echo "Perintah tidak dikenal \n";
         }
     }
    

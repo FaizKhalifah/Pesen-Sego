@@ -7,17 +7,19 @@ require_once __DIR__ . "/../controllers/fetchSego.php";
         if(strtolower($pilihanOpsi)=="ya"){
             $saldo=0;
             $status = fetchSego();
-            if($status==[]){
-                echo "Kamu saat ini tidak mememsan makanan apapun";
+            if(sizeof($status)== 0){
+                echo "Kamu saat ini tidak mememsan makanan apapun \n";
                 return;
             }
             foreach($status as $key => $value){
                 deleteSego();
                 $saldo+=10.000;
             }
-            echo "Anda perlu membayar sebanyak Rp.$saldo";
+            echo "Anda perlu membayar sebanyak Rp.$saldo \n";
+        }else if(strtolower($pilihanOpsi)=="tidak"){
+            echo "Baiklah, tapi kami tetap menunggu bayaran anda :) \n";
         }else{
-            echo "Baiklah, tapi kami tetap menunggu bayaran anda :)";
+            echo "Perintah tidak dikenal \n";
         }
     }
 ?>

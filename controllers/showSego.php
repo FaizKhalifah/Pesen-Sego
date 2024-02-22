@@ -2,10 +2,14 @@
     require_once __DIR__ . "/../Model/modelsego.php";
     function show(){
         global $arraySego;
-        $i = 0;
-        foreach($arraySego as $value){
-            echo "$i. $value \n";
-            $i++;
+        if(sizeof($arraySego) == 0){
+            echo "Belum ada makanan di cart \n";
+            return;
         }
+        foreach($arraySego as $key=>$value){
+            $key++;
+            echo "$key. $value \n";
+        }
+        echo "========================\n";
     }
 ?>
